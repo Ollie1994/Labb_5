@@ -6,7 +6,6 @@ public class User {
         this.password = password;
     }
     //--------------- METHODS ------------------------------------
-    //login
     //Meny
     //sök på bok
     //visa upp alla böcker/tillgängliga böcker

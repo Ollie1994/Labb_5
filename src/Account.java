@@ -4,9 +4,11 @@ public class Account {
 
     TryCatch tryCatch = new TryCatch();
     ArrayList<User> users = new ArrayList<User>();
+    ArrayList<User> admin = new ArrayList<>();
 
 
     public void testLäggTill() {
+        admin.add(new User("Bibliotekarie", "Admin123" ));
         users.add(new User("Oliwer", "Lösen"));
         users.add(new User("Karolina", "Lösen768"));
         users.add(new User("Mergim", "LösenhejHå"));
