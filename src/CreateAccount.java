@@ -4,8 +4,7 @@ public class CreateAccount {
     TryCatch tryCatch = new TryCatch();
     ArrayList<User> users = new ArrayList<User>();
 
-
-    //----------------METHODS-------------
+    //----------------METHODS ford user-------------
     public void createAccount () {
         System.out.println("please enter username");
         String username = tryCatch.tryCatchAccountCreation();
@@ -13,7 +12,9 @@ public class CreateAccount {
         String password = tryCatch.tryCatchAccountCreation();
         users.add(new User(username,password));
         System.out.println("You have successfully created a new account with username " + username + " and password " + password);
-
-        System.out.println(users);
     }
+    //--------------METHODS for Lib --------------------------
+
+
+
 }
