@@ -5,9 +5,13 @@ public class User {
         this.userName = userName;
         this.password = password;
     }
-
-
-
+    //--------------- METHODS ------------------------------------
+    //login
+    //Meny
+    //sök på bok
+    //visa upp alla böcker/tillgängliga böcker
+    //se lista på lånade böcker vid login och hur lång tid man har kvar på dem
+    //
 
     //------------ G & S -----------------------------------------------
     public String getUserName() {return userName;}
