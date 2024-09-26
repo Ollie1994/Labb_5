@@ -1,10 +1,17 @@
 import java.util.ArrayList;
 
-public class CreateAccount {
+public class Account {
+
     TryCatch tryCatch = new TryCatch();
     ArrayList<User> users = new ArrayList<User>();
 
-    //----------------METHODS ford user-------------
+
+    public void testLäggTill () {
+        users.add(new User("Oliwer", "Lösen"));
+        users.add(new User("Karolina", "Lösen768"));
+        users.add(new User("Mergim", "LösenhejHå"));
+    }
+    //----------------METHODS for user-------------
     public void createAccount () {
         System.out.println("please enter username");
         String username = tryCatch.tryCatchAccountCreation();
@@ -12,6 +19,9 @@ public class CreateAccount {
         String password = tryCatch.tryCatchAccountCreation();
         users.add(new User(username,password));
         System.out.println("You have successfully created a new account with username " + username + " and password " + password);
+    }
+    public void loginCheck () {
+
     }
     //--------------METHODS for Lib --------------------------
     public void displayAllUser() {
