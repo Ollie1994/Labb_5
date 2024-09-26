@@ -14,7 +14,14 @@ public class CreateAccount {
         System.out.println("You have successfully created a new account with username " + username + " and password " + password);
     }
     //--------------METHODS for Lib --------------------------
-
+    public void displayAllUser() {
+        for (User user : users) {
+            user.displayUserDetails();
+        }
+    }
 
 
 }
+
+
+

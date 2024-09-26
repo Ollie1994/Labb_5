@@ -1,5 +1,3 @@
-import java.util.Iterator;
-
 public class User {
     private String userName;
     private String password;
@@ -17,17 +15,11 @@ public class User {
 
 
 
-    public String displayUserDetails() {
-        return "User" + "\nUserName: " + getUserName() + "\nPassword: " + getPassword();
+    public void displayUserDetails() {
+        System.out.println("UserName: " + getUserName() + "\nPassword: " + getPassword());
+        System.out.println();
     }
-    public void printList () {
-        String s = "";
-        Iterator<User> itr = users.iterator();
-        while (itr.hasNext()) {
-            s = s + itr.next() + "\n";
-        }
-        System.out.println(s);
-    }
+
 
     //------------ G & S -----------------------------------------------
     public String getUserName() {return userName;}

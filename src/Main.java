@@ -11,7 +11,7 @@ public class Main {
             case 1 -> book1.displayBookDetails();
             case 2 -> createAccount.createAccount();
             case 3 -> System.exit(0); // vil kolalr vad detta är
-            case 4 -> createAccount.printList();
+            case 4 -> createAccount.displayAllUser();
 
         }
         }
