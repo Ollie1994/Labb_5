@@ -10,6 +10,13 @@ public class Book {
         this.genre = genre;
         this.isAvailable = true; // standard värde
     }
+    //----------------METHODS------------------------------------
+    public void displayBookDetails() {
+        System.out.println("Title: " + title + "\nAuthor: " + author + "\nGenre: " + genre + "\nAvailable: " + (isAvailable ? "Yes" : "No"));
+    }
+
+
+
 //----------------------- G & S ----------------------------------------
     public String getTitle() {return title;}
     public void setTitle(String title) {this.title = title;}

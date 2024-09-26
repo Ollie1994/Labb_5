@@ -19,4 +19,17 @@ public class TryCatch {
         }
         return choice;
     }
+    public String tryCatchAccountCreation() {
+            String choice = " ";
+            try {
+                Scanner sc = new Scanner(System.in);
+               choice = sc.nextLine();
+            } catch (Exception e) {
+                System.out.println("Wrong input, please input correctly");
+            } finally {
+            }
+        return choice;
+    }
+
+
 }
