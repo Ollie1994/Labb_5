@@ -12,7 +12,7 @@ public class TryCatch {
                     System.out.println("Wrong input, please choose between numbers 1-3!");
                 }
             } catch (Exception e) {
-
+                System.out.println("Wrong input, please choose between numbers 1-3!");
             } finally {
 
             }
