@@ -24,9 +24,11 @@ public class Account {
 
     public void loginCheck() {
         while (true) {
+            System.out.println("please enter username");
             String usernameToTest = tryCatch.tryCatchAccountCreation();
+            System.out.println("please enter password");
             String passwordToTest = tryCatch.tryCatchAccountCreation();
-            if (users.contains(usernameToTest) && users.contains(passwordToTest)) {
+            if (true) { // vi måste looopa igenom indexen efter namn och sen skriva nåt som jämför att det stämmer med inmatat.
                 System.out.println("You have successfully logged in");
                 break; // men ändra till att vi ska komam till meny här ifrån ifall vi lyckas logga in
             } else {
