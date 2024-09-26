@@ -16,7 +16,6 @@ public class Main {
                 case 2 -> account1.createAccount();
                 case 3 -> System.exit(0); // vil kolalr vad detta är
                 case 4 -> account1.displayAllUser();
-
             }
         }
     }

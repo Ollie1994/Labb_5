@@ -5,8 +5,6 @@ public class Account {
     TryCatch tryCatch = new TryCatch();
     ArrayList<User> users = new ArrayList<User>();
     ArrayList<User> admin = new ArrayList<>();
-
-
     public void testLäggTill() {
         admin.add(new User("Bibliotekarie", "Admin123" ));
         users.add(new User("Oliwer", "Lösen"));
@@ -14,7 +12,7 @@ public class Account {
         users.add(new User("Mergim", "LösenhejHå"));
     }
 
-    //----------------METHODS for user-------------
+    //----------------METHODS for user---------------------------------------
     public void createAccount() {
         System.out.println("please enter username");
         String username = tryCatch.tryCatchAccountCreation();
@@ -40,7 +38,7 @@ public class Account {
     }
 
     //--------------METHODS for Lib --------------------------
-    public void displayAllUser() {
+    public void displayAllUser() { // bara för admin
         for (User user : users) {
             user.displayUserDetails();
         }
