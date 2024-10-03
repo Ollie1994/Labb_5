@@ -6,7 +6,7 @@ public class Main {
         //----------------------------------------
         account1.testLäggTill();
 
-
+        System.out.println("hello");
         //tester
         while (true) {
             System.out.println("Welcome! \nWould you like to login or register a new account? \n1. Login \n2. Register an account \n3. Exit \n4. print users");
